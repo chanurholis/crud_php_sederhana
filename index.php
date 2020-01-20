@@ -65,7 +65,7 @@ $no = 1;
                         <td><?= $r['nama'] ?></td>
                         <td><?= $r['nrp'] ?></td>
                         <td><?= $r['jenis_kelamin'] ?></td>
-                        <td><a href="" class="badge badge-info">Edit</a><a style="margin-left: 5px;" href="" class="badge badge-danger">Delete</a></td>
+                        <td><a href="" class="badge badge-info">Edit</a><a style="margin-left: 5px;" href="<?= 'aksi_delete.php/' . $r['id'] ?>" class="badge badge-danger">Delete</a></td>
                     </tr>
                 </tbody>
             <?php endforeach ?>
