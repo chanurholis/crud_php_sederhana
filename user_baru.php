@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once("config.php");
 ?>
 
@@ -46,10 +47,13 @@ include_once("config.php");
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" class="form-control" name="nama" id="nama" autofocus>
+                <small class="text-danger"><?= $_SESSION['message_nama'] ?></small>
             </div>
             <div class="form-group">
                 <label for="nrp">NRP</label>
                 <input type="number" class="form-control" id="nrp" name="nrp">
+                <small class="text-danger"><?= $_SESSION['message_unique'] ?></small>
+                <small class="text-danger"><?= $pesan ?></small>
             </div>
             <div class="form-group">
                 <label for="jk">Jenis Kelamin</label>
